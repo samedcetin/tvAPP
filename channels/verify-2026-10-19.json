@@ -1,0 +1,428 @@
+[
+ {
+  "id": "trt1",
+  "url": "https://trt.daioncdn.net/trt-1/master.m3u8?app=clean",
+  "verdict": "LIVE",
+  "best": "2560x1440 @ 11546 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T22:59:54.711Z"
+ },
+ {
+  "id": "trt1",
+  "url": "https://tv-trt1.medya.trt.com.tr/master.m3u8",
+  "verdict": "LIVE",
+  "best": "2560x1440 @ 11546 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T22:59:54.707Z"
+ },
+ {
+  "id": "kanald",
+  "url": "https://demiroren.daioncdn.net/kanald/kanald.m3u8?app=kanald_web&ce=3",
+  "verdict": "LIVE",
+  "best": "1920x1080 @ 2200 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:00:09.585Z"
+ },
+ {
+  "id": "atv",
+  "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8",
+  "verdict": "LIVE",
+  "best": "1920x1080 @ 2200 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:00:09.336Z"
+ },
+ {
+  "id": "kanald",
+  "url": "https://kdlive.duhnet.tv/S2/HLS_LIVE/kanalddainp/playlist.m3u8",
+  "verdict": "LIVE",
+  "best": "? @ 1578 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:00:24.053Z"
+ },
+ {
+  "id": "showtv",
+  "url": "https://ciner.daioncdn.net/showtv/showtv.m3u8?ce=3&app=4bc856ef-4c68-4a94-bc87-37dfaaa66558",
+  "verdict": "LIVE",
+  "best": "1920x1080 @ 2200 kbps",
+  "retried": true,
+  "probedAt": "2026-10-18T23:00:36.022Z"
+ },
+ {
+  "id": "startv",
+  "url": "https://dygvideo.dygdigital.com/live/hls/startv4puhu",
+  "verdict": "LIVE",
+  "best": "1920x1080 @ 3000 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:00:38.972Z"
+ },
+ {
+  "id": "startv",
+  "url": "https://dogus.daioncdn.net/startv/startv.m3u8?app=startv_web&ce=3",
+  "verdict": "LIVE",
+  "reason": "ilk iki denemede yerel DNS hatası (ENOTFOUND); üçüncü denemede canlı",
+  "retried": true,
+  "probedAt": "2026-10-18T23:08:12.011Z",
+  "best": "1280x720 @ 1050 kbps"
+ },
+ {
+  "id": "tv8",
+  "url": "https://tv8.daioncdn.net/tv8/tv8.m3u8?app=7ddc255a-ef47-4e81-ab14-c0e5f2949788&ce=3",
+  "verdict": "LIVE",
+  "best": "1920x1080 @ 2200 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:01:07.917Z"
+ },
+ {
+  "id": "now",
+  "url": "https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8",
+  "verdict": "LIVE",
+  "best": "1280x720 @ 1050 kbps",
+  "retried": true,
+  "probedAt": "2026-10-18T23:01:08.579Z"
+ },
+ {
+  "id": "kanal7",
+  "url": "https://kanal7-live.daioncdn.net/kanal7/kanal7.m3u8",
+  "verdict": "LIVE",
+  "best": "1920x1080 @ 2200 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:01:22.340Z"
+ },
+ {
+  "id": "beyaztv",
+  "url": "https://beyaztv-live.daioncdn.net/beyaztv/beyaztv.m3u8",
+  "verdict": "LIVE",
+  "best": "1920x1080 @ 2200 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:01:37.322Z"
+ },
+ {
+  "id": "teve2",
+  "url": "https://demiroren.daioncdn.net/teve2/teve2.m3u8?ce=3&app=6aab838a-437e-4a1b-bbd0-e30f79cdbbbd",
+  "verdict": "LIVE",
+  "best": "1920x1080 @ 2200 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:01:36.858Z"
+ },
+ {
+  "id": "beyaztv",
+  "url": "https://mlatlxfaaa.turknet.ercdn.net/zqhpjaumpm/beyaztv/beyaztv.m3u8",
+  "verdict": "LIVE",
+  "best": "1920x1080 @ 2200 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:01:52.134Z"
+ },
+ {
+  "id": "tv360",
+  "url": "https://turkmedya-live.ercdn.net/tv360/tv360.m3u8",
+  "verdict": "LIVE",
+  "best": "? @ 2500 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:01:52.940Z"
+ },
+ {
+  "id": "trt2",
+  "url": "https://tv-trt2.medya.trt.com.tr/master.m3u8",
+  "verdict": "LIVE",
+  "best": "2560x1440 @ 11546 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:02:06.963Z"
+ },
+ {
+  "id": "trthaber",
+  "url": "https://tv-trthaber.medya.trt.com.tr/master.m3u8",
+  "verdict": "LIVE",
+  "best": "2560x1440 @ 11546 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:02:07.774Z"
+ },
+ {
+  "id": "ntv",
+  "url": "https://dygvideo.dygdigital.com/live/hls/ntv4puhu",
+  "verdict": "LIVE",
+  "best": "1920x1080 @ 5641 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:02:21.912Z"
+ },
+ {
+  "id": "ntv",
+  "url": "https://dogus.daioncdn.net/ntv/ntv.m3u8?app=ntv_web&ce=3",
+  "verdict": "LIVE",
+  "best": "1920x1080 @ 2200 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:02:22.095Z"
+ },
+ {
+  "id": "haberturk",
+  "url": "https://ciner.daioncdn.net/haberturktv/haberturktv.m3u8?app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b&ce=3",
+  "verdict": "LIVE",
+  "best": "1920x1080 @ 2200 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:02:36.424Z"
+ },
+ {
+  "id": "ahaber",
+  "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber.m3u8",
+  "verdict": "LIVE",
+  "best": "1920x1080 @ 2200 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:02:36.752Z"
+ },
+ {
+  "id": "tgrthaber",
+  "url": "https://canli.tgrthaber.com/tgrt.m3u8",
+  "verdict": "LIVE",
+  "best": "single variant",
+  "retried": false,
+  "probedAt": "2026-10-18T23:02:50.856Z"
+ },
+ {
+  "id": "tv24",
+  "url": "https://turkmedya-live.ercdn.net/tv24/tv24.m3u8",
+  "verdict": "LIVE",
+  "best": "? @ 2500 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:02:53.459Z"
+ },
+ {
+  "id": "tvnet",
+  "url": "https://tvnet-live.lg.mncdn.com/tvnet-live/tvnet/playlist.m3u8",
+  "verdict": "LIVE",
+  "best": "1920x1080 @ 5033 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:03:05.006Z"
+ },
+ {
+  "id": "ulketv",
+  "url": "https://livetv.radyotvonline.net/kanal7live/ulketv/playlist.m3u8",
+  "verdict": "LIVE",
+  "best": "1280x720 @ 1406 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:03:12.129Z"
+ },
+ {
+  "id": "bloomberght",
+  "url": "https://ciner.daioncdn.net/bloomberght/bloomberght.m3u8?app=web",
+  "verdict": "LIVE",
+  "best": "1280x720 @ 1050 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:03:19.292Z"
+ },
+ {
+  "id": "apara",
+  "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/apara/apara.m3u8",
+  "verdict": "LIVE",
+  "best": "1920x1080 @ 2200 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:03:26.744Z"
+ },
+ {
+  "id": "cnbce",
+  "url": "https://hnpsechtsc.turknet.ercdn.net/xpnvudnlsv/cnbc-e/cnbc-e.m3u8",
+  "verdict": "LIVE",
+  "reason": "ilk iki denemede yerel DNS hatası (ENOTFOUND); üçüncü denemede canlı",
+  "retried": true,
+  "probedAt": "2026-10-18T23:08:12.012Z",
+  "best": "1920x1080 @ 2200 kbps"
+ },
+ {
+  "id": "ekoturk",
+  "url": "https://cdn.ekoturk.net/hls/master.m3u8",
+  "verdict": "LIVE",
+  "best": "1280x720 @ 3186 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:03:34.015Z"
+ },
+ {
+  "id": "trtspor",
+  "url": "https://tv-trtspor1.medya.trt.com.tr/master.m3u8",
+  "verdict": "LIVE",
+  "best": "2560x1440 @ 11546 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:03:44.818Z"
+ },
+ {
+  "id": "trtsporyildiz",
+  "url": "https://tv-trtspor2.medya.trt.com.tr/master.m3u8",
+  "verdict": "LIVE",
+  "best": "2560x1440 @ 11546 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:03:48.277Z"
+ },
+ {
+  "id": "trtsporyildiz",
+  "url": "https://trt.daioncdn.net/trtspor-yildiz/master.m3u8?app=clean",
+  "verdict": "LIVE",
+  "best": "2560x1440 @ 10490 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:03:59.833Z"
+ },
+ {
+  "id": "aspor",
+  "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8",
+  "verdict": "LIVE",
+  "best": "1920x1080 @ 2200 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:04:02.801Z"
+ },
+ {
+  "id": "htspor",
+  "url": "https://ciner.daioncdn.net/ht-spor/ht-spor.m3u8?app=web",
+  "verdict": "LIVE",
+  "best": "1920x1080 @ 2200 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:04:15.130Z"
+ },
+ {
+  "id": "trtcocuk",
+  "url": "https://tv-trtcocuk.medya.trt.com.tr/master.m3u8",
+  "verdict": "LIVE",
+  "best": "2560x1440 @ 9258 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:04:17.369Z"
+ },
+ {
+  "id": "trtdiyanetcocuk",
+  "url": "https://tv-trtdiyanetcocuk.medya.trt.com.tr/master.m3u8",
+  "verdict": "LIVE",
+  "best": "2560x1440 @ 11546 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:04:29.938Z"
+ },
+ {
+  "id": "minikacocuk",
+  "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk.m3u8",
+  "verdict": "LIVE",
+  "best": "1280x720 @ 1050 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:04:31.729Z"
+ },
+ {
+  "id": "trtbelgesel",
+  "url": "https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8",
+  "verdict": "LIVE",
+  "best": "2560x1440 @ 11546 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:04:46.364Z"
+ },
+ {
+  "id": "minikago",
+  "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8",
+  "verdict": "LIVE",
+  "best": "1280x720 @ 1050 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:04:44.352Z"
+ },
+ {
+  "id": "dmax",
+  "url": "https://dogus.daioncdn.net/dmax/dmax.m3u8?ce=3&app=5a02c599-d17e-4982-9b04-090934d51af7",
+  "verdict": "LIVE",
+  "best": "1280x720 @ 1050 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:05:00.816Z"
+ },
+ {
+  "id": "tlc",
+  "url": "https://dogus.daioncdn.net/tlc/tlc.m3u8?ce=3&app=1aca0aa1-06e3-41ff-a8e5-38d7df475469",
+  "verdict": "LIVE",
+  "best": "1280x720 @ 1050 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:05:03.059Z"
+ },
+ {
+  "id": "trtmuzik",
+  "url": "https://tv-trtmuzik.medya.trt.com.tr/master.m3u8",
+  "verdict": "LIVE",
+  "best": "2560x1440 @ 11546 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:05:15.271Z"
+ },
+ {
+  "id": "dreamturk",
+  "url": "https://live.duhnet.tv/S2/HLS_LIVE/dreamturknp/playlist.m3u8",
+  "verdict": "LIVE",
+  "best": "? @ 1578 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:05:17.485Z"
+ },
+ {
+  "id": "trtgenc",
+  "url": "https://tv-trtgenc.medya.trt.com.tr/master.m3u8",
+  "verdict": "LIVE",
+  "best": "2560x1440 @ 11546 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:05:29.625Z"
+ },
+ {
+  "id": "diyanettv",
+  "url": "https://eustr73.mediatriple.net/videoonlylive/mtikoimxnztxlive/broadcast_5e3bf95a47e07.smil/playlist.m3u8",
+  "verdict": "LIVE",
+  "best": "1920x1080 @ 2306 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:05:32.395Z"
+ },
+ {
+  "id": "tbmmtv",
+  "url": "https://meclistv-live.ercdn.net/meclistv/meclistv.m3u8",
+  "verdict": "LIVE",
+  "best": "? @ 1200 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:05:43.999Z"
+ },
+ {
+  "id": "trtturk",
+  "url": "https://tv-trtturk.medya.trt.com.tr/master.m3u8",
+  "verdict": "LIVE",
+  "best": "2560x1440 @ 11546 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:05:46.949Z"
+ },
+ {
+  "id": "trtavaz",
+  "url": "https://tv-trtavaz.medya.trt.com.tr/master.m3u8",
+  "verdict": "LIVE",
+  "best": "2560x1440 @ 11546 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:05:58.761Z"
+ },
+ {
+  "id": "trtkurdi",
+  "url": "https://tv-trtkurdi.medya.trt.com.tr/master.m3u8",
+  "verdict": "LIVE",
+  "best": "2560x1440 @ 11546 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:06:01.282Z"
+ },
+ {
+  "id": "trtarabi",
+  "url": "https://tv-trtarabi.medya.trt.com.tr/master.m3u8",
+  "verdict": "LIVE",
+  "best": "2560x1440 @ 11546 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:06:13.351Z"
+ },
+ {
+  "id": "trtworld",
+  "url": "https://tv-trtworld.medya.trt.com.tr/master.m3u8",
+  "verdict": "LIVE",
+  "best": "2560x1440 @ 11546 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:06:15.817Z"
+ },
+ {
+  "id": "trteba",
+  "url": "https://tv-e-okul01.medya.trt.com.tr/master.m3u8",
+  "verdict": "LIVE",
+  "best": "1280x720 @ 4717 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:06:27.752Z"
+ },
+ {
+  "id": "showturk",
+  "url": "https://ciner.daioncdn.net/showturk/showturk.m3u8?app=web",
+  "verdict": "LIVE",
+  "best": "1920x1080 @ 2200 kbps",
+  "retried": false,
+  "probedAt": "2026-10-18T23:06:30.212Z"
+ }
+]

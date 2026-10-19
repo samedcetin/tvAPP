@@ -1,0 +1,30 @@
+# Gradle / Android
+.gradle/
+build/
+app/build/
+local.properties
+*.apk
+*.aab
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Signing — never commit
+keystore.properties
+*.jks
+*.keystore
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Figma Make export dependencies
+design/figma-make/node_modules/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Kotlin compiler caches
+.kotlin/

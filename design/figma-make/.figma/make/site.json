@@ -1,0 +1,10 @@
+{
+  "description": "Create and manage design projects based on shared Markdown files, streamlining collaboration for teams and enhancing productivity.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
