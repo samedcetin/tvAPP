@@ -56,6 +56,8 @@ data class ChannelSource(
     val pattern: String? = null,
     /** api-token: "A.B.C + X.Y" dotted JSON paths concatenated. */
     val path: String? = null,
+    /** page-token / api-token: headers for the token request itself (e.g. the site's Referer), not for the stream. */
+    @SerialName("request_headers") val requestHeaders: Map<String, String> = emptyMap(),
     @SerialName("live_offset_ms") val liveOffsetMs: Long? = null,
 ) {
     val key: String get() = "$type|$url"

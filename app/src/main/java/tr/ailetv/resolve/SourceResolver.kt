@@ -66,7 +66,7 @@ class SourceResolver(private val http: OkHttpClient) {
     }
 
     private suspend fun pageToken(source: ChannelSource): Resolved.Hls {
-        val html = get(source.url, UserAgents.DESKTOP)
+        val html = get(source.url, UserAgents.DESKTOP, source.requestHeaders)
         val regex = Regex(source.pattern ?: throw SourceUnavailable("page-token without pattern"))
         val raw = regex.find(html)?.value ?: throw SourceUnavailable("token url not found on page")
         val url = raw.replace("\\/", "/").replace("&amp;", "&")
@@ -74,7 +74,8 @@ class SourceResolver(private val http: OkHttpClient) {
     }
 
     private suspend fun apiToken(source: ChannelSource): Resolved.Hls {
-        val json = AppJson.parseToJsonElement(get(source.url, UserAgents.DESKTOP))
+        // Some token services only answer requests that come from their own site (Turkuvaz checks the Referer).
+        val json = AppJson.parseToJsonElement(get(source.url, UserAgents.DESKTOP, source.requestHeaders))
         val expr = source.path ?: throw SourceUnavailable("api-token without path")
         val url = expr.split("+").joinToString("") { term ->
             val t = term.trim()

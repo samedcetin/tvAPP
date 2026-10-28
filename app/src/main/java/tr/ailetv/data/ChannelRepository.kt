@@ -40,6 +40,8 @@ class ChannelRepository(private val context: Context, private val http: OkHttpCl
                 val text = resp.body.string()
                 val remote = parse(text) ?: return@withContext false
                 if (remote.enabledChannels.isEmpty()) return@withContext false
+                // A stale CDN copy must not roll the box back to an older list; the one it has is current.
+                if (!isNewerOrSame(remote, _catalog.value)) return@withContext true
                 cacheFile.writeText(text)
                 _catalog.value = remote
                 true

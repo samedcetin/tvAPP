@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "updated_at": "2026-10-19",
-  "verified_from": "Türkiye (ev interneti), 19.10.2026 00:30-02:00",
+  "updated_at": "2026-10-28",
+  "verified_from": "Türkiye (ev interneti), 19.10.2026; Turkuvaz kanalları 28.10.2026",
   "policy": {
     "decided_at": "2026-10-19",
     "token_reading": true,
@@ -93,6 +93,19 @@
       "default_favorite": true,
       "enabled": true,
       "sources": [
+        {
+          "enabled": true,
+          "type": "api-token",
+          "url": "https://securevideotoken.tmgrup.com.tr/webtv/secure?url=https%3A%2F%2Ftrkvz.daioncdn.net%2Fatv%2Fatv.m3u8%3Fce%3D3%26app%3Dd1ce2d40-5256-4550-b02e-e73c185a314e",
+          "path": "Url",
+          "request_headers": {
+            "Referer": "https://www.atv.com.tr/"
+          },
+          "origin": "official-api",
+          "tier": 1,
+          "max": "1920x1080",
+          "note": "Resmi site oynatıcısının yaptığı gibi Turkuvaz token servisinden geçici (~11 saat) resmi adres alınır; token üretilmez."
+        },
         {
           "enabled": true,
           "type": "hls",
@@ -513,6 +526,19 @@
       "default_favorite": false,
       "enabled": true,
       "sources": [
+        {
+          "enabled": true,
+          "type": "api-token",
+          "url": "https://securevideotoken.tmgrup.com.tr/webtv/secure?url=https%3A%2F%2Ftrkvz.daioncdn.net%2Fahaber%2Fahaber.m3u8%3Fapp%3Dweb",
+          "path": "Url",
+          "request_headers": {
+            "Referer": "https://www.ahaber.com.tr/"
+          },
+          "origin": "official-api",
+          "tier": 1,
+          "max": "1920x1080",
+          "note": "Resmi site oynatıcısının yaptığı gibi Turkuvaz token servisinden geçici (~11 saat) resmi adres alınır; token üretilmez."
+        },
         {
           "enabled": true,
           "type": "hls",
@@ -941,6 +967,19 @@
       "sources": [
         {
           "enabled": true,
+          "type": "api-token",
+          "url": "https://securevideotoken.tmgrup.com.tr/webtv/secure?url=https%3A%2F%2Ftrkvz.daioncdn.net%2Faspor%2Faspor.m3u8%3Fce%3D3%26app%3D45f847c4-04e8-419a-a561-2ebf87084765",
+          "path": "Url",
+          "request_headers": {
+            "Referer": "https://www.aspor.com.tr/"
+          },
+          "origin": "official-api",
+          "tier": 1,
+          "max": "1920x1080",
+          "note": "Resmi site oynatıcısının yaptığı gibi Turkuvaz token servisinden geçici (~11 saat) resmi adres alınır; token üretilmez."
+        },
+        {
+          "enabled": true,
           "type": "hls",
           "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8",
           "origin": "broadcaster-cdn-edge",
@@ -1035,6 +1074,19 @@
       "sources": [
         {
           "enabled": true,
+          "type": "api-token",
+          "url": "https://securevideotoken.tmgrup.com.tr/webtv/secure?url=https%3A%2F%2Ftrkvz.daioncdn.net%2Fminikago_cocuk%2Fminikago_cocuk.m3u8%3Fapp%3Dweb%26ce%3D3",
+          "path": "Url",
+          "request_headers": {
+            "Referer": "https://www.minikacocuk.com.tr/"
+          },
+          "origin": "official-api",
+          "tier": 1,
+          "max": "1280x720",
+          "note": "Resmi site oynatıcısının yaptığı gibi Turkuvaz token servisinden geçici (~11 saat) resmi adres alınır; token üretilmez."
+        },
+        {
+          "enabled": true,
           "type": "hls",
           "url": "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk.m3u8",
           "origin": "broadcaster-cdn-edge",
@@ -1058,6 +1110,19 @@
       "default_favorite": false,
       "enabled": true,
       "sources": [
+        {
+          "enabled": true,
+          "type": "api-token",
+          "url": "https://securevideotoken.tmgrup.com.tr/webtv/secure?url=https%3A%2F%2Ftrkvz.daioncdn.net%2Fminikago%2Fminikago.m3u8%3Fapp%3Dweb%26ce%3D3",
+          "path": "Url",
+          "request_headers": {
+            "Referer": "https://www.minikago.com.tr/"
+          },
+          "origin": "official-api",
+          "tier": 1,
+          "max": "1280x720",
+          "note": "Resmi site oynatıcısının yaptığı gibi Turkuvaz token servisinden geçici (~11 saat) resmi adres alınır; token üretilmez."
+        },
         {
           "enabled": true,
           "type": "hls",

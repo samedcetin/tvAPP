@@ -20,8 +20,8 @@ android {
         applicationId = "tr.ailetv"
         minSdk = 24
         targetSdk = 36
-        versionCode = 10000
-        versionName = "1.0.0"
+        versionCode = 10001
+        versionName = "1.0.1"
 
         // Remote channel list (GitHub raw URL). Empty = use the bundled assets/channels.json only.
         buildConfigField("String", "CHANNELS_URL", "\"${providers.gradleProperty("ailetv.channelsUrl").getOrElse("")}\"")

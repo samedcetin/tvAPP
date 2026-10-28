@@ -7,11 +7,22 @@ const R = (site) => ({ Referer: site, Origin: new URL(site).origin });
 const trt = (slug, max = "2560x1440", note) => ({ type: "hls", url: `https://tv-${slug}.medya.trt.com.tr/master.m3u8`, origin: "official", tier: 1, max, note });
 const yt = (handle, channel_id, note) => ({ type: "youtube", handle, channel_id, url: `https://www.youtube.com/channel/${channel_id}/live`, origin: "youtube-official", tier: 2, note });
 const web = (url, note) => ({ type: "web", url, origin: "official-page", tier: 3, note });
+// Turkuvaz (ATV, A Haber, A Spor, Minika): the official site player asks securevideotoken.tmgrup.com.tr for a
+// tokenised URL of its own daioncdn stream; the service only answers requests carrying the site's Referer.
+const turkuvaz = (site, stream, max) => ({
+  type: "api-token",
+  url: "https://securevideotoken.tmgrup.com.tr/webtv/secure?url=" + encodeURIComponent(stream),
+  path: "Url",
+  request_headers: { Referer: site },
+  origin: "official-api", tier: 1, max,
+  note: "Resmi site oynatıcısının yaptığı gibi Turkuvaz token servisinden geçici (~11 saat) resmi adres alınır; token üretilmez.",
+});
 const restream = (url, max, note) => ({ type: "hls", url, origin: "thirdparty-restream", tier: 3, max, enabled: false, note: "Üçüncü taraf yeniden yayın (tv.ensonhaber.com). Varsayılan olarak kapalı; kararınıza bağlı. " + (note || "") });
 
 const CH = [
   { id: "trt1", n: 1, name: "TRT 1", cat: "genel", fav: true, s: [trt("trt1"), { type: "hls", url: "https://trt.daioncdn.net/trt-1/master.m3u8?app=clean", origin: "official-alt", tier: 1, max: "2560x1440" }] },
   { id: "atv", n: 2, name: "ATV", cat: "genel", fav: true, s: [
+    turkuvaz("https://www.atv.com.tr/", "https://trkvz.daioncdn.net/atv/atv.m3u8?ce=3&app=d1ce2d40-5256-4550-b02e-e73c185a314e", "1920x1080"),
     { type: "hls", url: "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/atv/atv.m3u8", origin: "broadcaster-cdn-edge", tier: 2, max: "1920x1080", note: "Turkuvaz'ın kendi CDN'i (Erstream) üzerindeki yayınlanmamış kenar adresi; resmi oynatıcı segmentleri buradan çeker. Token yok." },
     web("https://www.atv.com.tr/canli-yayin", "Resmi sayfa; oynatıcı securevideotoken.tmgrup.com.tr'den token alır.") ] },
   { id: "kanald", n: 3, name: "Kanal D", cat: "genel", fav: true, s: [
@@ -52,6 +63,7 @@ const CH = [
     { type: "hls", url: "https://ciner.daioncdn.net/haberturktv/haberturktv.m3u8?app=c98ab0b0-50cc-495b-bb37-778e91f5ff5b&ce=3", headers: R("https://www.haberturk.com/"), origin: "official", tier: 1, max: "1920x1080" },
     yt("@HaberturkTV", "UCn6dNfiRE_Xunu7iMyvD7AA") ] },
   { id: "ahaber", n: 17, name: "A Haber", cat: "haber", fav: false, s: [
+    turkuvaz("https://www.ahaber.com.tr/", "https://trkvz.daioncdn.net/ahaber/ahaber.m3u8?app=web", "1920x1080"),
     { type: "hls", url: "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/ahaber/ahaber.m3u8", origin: "broadcaster-cdn-edge", tier: 2, max: "1920x1080" },
     yt("@ahaber", "UCKQhfw-lzz0uKnE1fY1PsAA") ] },
   { id: "sozcutv", n: 18, name: "Sözcü TV", cat: "haber", fav: false, s: [ yt("@Sozcutelevizyonu", "UCOulx_rep5O4i9y6AyDqVvw", "Kanalın tek resmi canlı kaynağı YouTube.") ] },
@@ -85,6 +97,7 @@ const CH = [
   { id: "trtspor", n: 32, name: "TRT Spor", cat: "spor", fav: false, s: [trt("trtspor1", "2560x1440", "Lisanslı maçlarda internet yayını kesilebilir.")] },
   { id: "trtsporyildiz", n: 33, name: "TRT Spor Yıldız", cat: "spor", fav: false, s: [trt("trtspor2", "2560x1440", "Yalnızca Türkiye IP'sinden."), { type: "hls", url: "https://trt.daioncdn.net/trtspor-yildiz/master.m3u8?app=clean", origin: "official-alt", tier: 1, max: "2560x1440" }] },
   { id: "aspor", n: 34, name: "A Spor", cat: "spor", fav: false, s: [
+    turkuvaz("https://www.aspor.com.tr/", "https://trkvz.daioncdn.net/aspor/aspor.m3u8?ce=3&app=45f847c4-04e8-419a-a561-2ebf87084765", "1920x1080"),
     { type: "hls", url: "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/aspor/aspor.m3u8", origin: "broadcaster-cdn-edge", tier: 2, max: "1920x1080" },
     yt("@aspor", "UCJElRTCNEmLemgirqvsW63Q") ] },
   { id: "htspor", n: 35, name: "HT Spor", cat: "spor", fav: false, s: [
@@ -93,9 +106,11 @@ const CH = [
   { id: "trtcocuk", n: 36, name: "TRT Çocuk", cat: "cocuk", fav: false, s: [trt("trtcocuk")] },
   { id: "trtdiyanetcocuk", n: 37, name: "TRT Diyanet Çocuk", cat: "cocuk", fav: false, s: [trt("trtdiyanetcocuk")] },
   { id: "minikacocuk", n: 38, name: "Minika Çocuk", cat: "cocuk", fav: false, s: [
+    turkuvaz("https://www.minikacocuk.com.tr/", "https://trkvz.daioncdn.net/minikago_cocuk/minikago_cocuk.m3u8?app=web&ce=3", "1280x720"),
     { type: "hls", url: "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago_cocuk/minikago_cocuk.m3u8", origin: "broadcaster-cdn-edge", tier: 2, max: "1280x720" },
     web("https://www.minikacocuk.com.tr/webtv/canli-yayin") ] },
   { id: "minikago", n: 39, name: "Minika GO", cat: "cocuk", fav: false, s: [
+    turkuvaz("https://www.minikago.com.tr/", "https://trkvz.daioncdn.net/minikago/minikago.m3u8?app=web&ce=3", "1280x720"),
     { type: "hls", url: "https://rnttwmjcin.turknet.ercdn.net/lcpmvefbyo/minikago/minikago.m3u8", origin: "broadcaster-cdn-edge", tier: 2, max: "1280x720" },
     web("https://www.minikago.com.tr/webtv/canli-yayin") ] },
   { id: "trtbelgesel", n: 40, name: "TRT Belgesel", cat: "belgesel", fav: false, s: [trt("trtbelgesel")] },
@@ -124,8 +139,8 @@ const CH = [
 
 const doc = {
   version: 1,
-  updated_at: "2026-10-19",
-  verified_from: "Türkiye (ev interneti), 19.10.2026 00:30-02:00",
+  updated_at: "2026-10-28",
+  verified_from: "Türkiye (ev interneti), 19.10.2026; Turkuvaz kanalları 28.10.2026",
   policy: {
     decided_at: "2026-10-19",
     token_reading: true,
