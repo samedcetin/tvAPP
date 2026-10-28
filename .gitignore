@@ -28,3 +28,6 @@ Thumbs.db
 
 # Kotlin compiler caches
 .kotlin/
+
+# Release APK for Downloader (published on purpose)
+!release/AileTV.apk
